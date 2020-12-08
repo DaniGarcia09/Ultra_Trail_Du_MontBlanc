@@ -1,16 +1,190 @@
 * {
     box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
 }
 
 body {
     margin: 0;
 }
 
+
+/* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*Header (Encabezado)*/
+
+.header {
+    background-image: url('../img/banner.jpg');
+    background-attachment: fixed;
+    padding: 10% 15%;
+    text-align: center;
+    background-size: cover;
+    font-size: 45px;
+}
+
+
+/* Style the top navigation bar */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+    font-size: 20px;
+}
+
+
+/* Style the topnav links */
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Change color on hover */
+
+li a:hover:not(.active) {
+    background-color: #111;
+    color: white;
+}
+
+
+/*Creacion de columnas*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 2% 16% 3% 16%;
+    font-size: 3vw;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 1.8% 1% 1.4% 35px;
+}
+
+.three-column {
+    width: 33%;
+    float: left;
+}
+
+.three-column img {
+    width: 100%;
+    height: 50vh;
+}
+
+.four-column {
+    padding: 0 12px 0 12px;
+    float: left;
+    width: 25%;
+}
+
+
+/*Adaptacion de imagenes*/
+
+.two-column img {
+    width: 100%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+
+/*Adaptacion de letras*/
+
+.one-column h1 {
+    text-align: center;
+    font-size: 75px;
+}
+
+.two-column h1 {
+    font-size: 5vw;
+}
+
+.two-column p {
+    font-size: 3vw;
+}
+
+.four-column h1 {
+    text-align: center;
+    font-size: 1.27vw;
+}
+
+.four-column p {
+    font-size: 1.27vw;
+    padding: 15px 0 0 15px;
+}
+
+.sin_pad {
+    padding: 0;
+    margin-bottom: -5px;
+}
+
+
+/*ID*/
+
+#section_2 {
+    background-color: #28ECA5;
+}
+
+#section_5 {
+    background-color: #46A6FC;
+}
+
+#footer {
+    background-color: black;
+    color: white;
+}
+
+#footer p {
+    font-size: 25px;
+}
+
+.padding_top {
+    padding-top: 32px;
+}
+
+#servicio {
+    width: 100%;
+    height: auto;
+}
+
+.icono {
+    text-align: center;
+}
+
+#center {
+    width: 50%;
+    transform: translate(200px, 0);
+}
+
+
+/*TABLAS */
 
 #customers {
     font-family: Arial, Helvetica, sans-serif;
@@ -36,6 +210,74 @@ body {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4c56af;
+    background-color: #4CAF50;
     color: white;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 700px) {
+    .header {
+        font-size: 6vw;
+    }
+    .two-column {
+        width: 100%;
+        padding: 1% 5% 1% 5%;
+    }
+    .three-column {
+        width: 33%;
+    }
+    .three-column img {
+        width: 100%;
+        height: 100px;
+        float: left;
+    }
+    .two-column h1 {
+        font-size: 8vw;
+    }
+    .two-column p {
+        font-size: 4.2vw;
+    }
+    .four-column {
+        width: 50%;
+    }
+    .one-column h1 {
+        font-size: 6vw;
+    }
+    li a {
+        font-size: 4vw;
+    }
+    li {
+        width: 50%;
+        float: none;
+        display: inline-block;
+    }
+    ul {
+        padding: 0;
+    }
+    #footer p {
+        font-size: 4vw;
+    }
+    ul.scrollmenu {
+        overflow: auto;
+        white-space: nowrap;
+    }
+    body {
+        overflow-x: hidden;
+    }
+    #gulugulu {
+        height: 25vh;
+    }
+    #servicio {
+        height: auto;
+        width: 110%;
+    }
+    .icono {
+        font-size: 25px;
+    }
+    #center {
+        width: 50%;
+        transform: translate(70px, 0);
+    }
 }

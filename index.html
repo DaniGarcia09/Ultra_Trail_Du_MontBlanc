@@ -1,77 +1,198 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
-<HEAD>
-    <meta charset="utf-8" />
-    <title>Ultra trail du Mont Blanc </title>
+<head>
+    <title>UTMB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-</HEAD>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+    <script src="js/codigo.js"></script>
+    <link href="css/fontawesome/css/all.css" rel="stylesheet">
+    <link rel="icon" href="img/utmb-2016-v1.png" type="image/png" sizes="16x16">
+    <!--load all styles -->
+</head>
 
 <body>
-    <!--Contingut de la web-->
-    <p>
-        Ultra
-        <iframe src="https://discord.com/widget?id=783666840902565918&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9835.821960474765!2d6.856727353456358!3d45.83267325288108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789459fb534be51%3A0xa908728c5dcec4c0!2sMont%20Blanc!5e0!3m2!1ses!2ses!4v1606910327843!5m2!1ses!2ses"
-            width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </p>
+    <ul class="scrollmenu" id="navi">
+        <li><a href="#header">Welcome</a></li>
+        <li><a href="#section_1">Punto de encuentro</a></li>
+        <li><a href="#section_2">Servicios</a></li>
+        <li><a href="#section_3">Otros</a></li>
+    </ul>
+    <div class="header">
+        <div id="header">
+            <h1>Welcome to </h1>
+            <img src="img/utmb-2016-v1.png">
+        </div>
+    </div>
+
+    <!--Seccion 1-->
+    <div class="row padding_top" id="section_1">
+        <div class="one-column">
+            <h1>PUNTO DE ENCUENTRO</h1>
+            <p>UTMB es una ultramaratón de montaña que tiene lugar una vez al año en los alpes, atrvesando Francia, Italia y Suiza. Con una distancia de unos 172 KM</p>
+        </div>
+        <div class="three-column">
+            <img src="img/suiza.png">
+        </div>
+        <div class="three-column">
+            <img src="img/italy.jpg">
+        </div>
+        <div class="three-column">
+            <img src="img/france.jpg">
+        </div>
+        <iframe id="gulugulu" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11119.732427676541!2d6.85642013661454!3d45.83262146571051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4789459fb534be51%3A0xa908728c5dcec4c0!2sMont%20Blanc!5e0!3m2!1ses!2ses!4v1607444659070!5m2!1ses!2ses"
+            width="100%" height="420px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+    </div>
+    <!--Seccion 2-->
+    <div class="row padding_top" id="section_2">
+        <div class="one-column">
+            <h1>SERVICIOS</h1>
+            <div class="four-column icono">
+                <h1>WC</h1>
+                <i class="fas fa-toilet"></i>
+            </div>
+            <div class="four-column icono">
+                <h1>Bebidas</h1>
+                <i class="fas fa-mug-hot"></i>
+            </div>
+            <div class="four-column icono">
+                <h1>Descanso</h1>
+                <i class="fas fa-bed"></i>
+            </div>
+            <div class="four-column icono">
+                <h1>Socorro</h1>
+                <i class="fas fa-hand-holding-medical"></i>
+            </div>
+        </div>
+        <div class="one-column">
+            <img id="servicio" src="img/servicios.jpg">
+        </div>
+    </div>
+
+    <div class="row padding_top" id="section_3">
+        <div class="two-column">
+            <img src="img/chamonix.png" alt="Kids writing">
+        </div>
+        <div class="two-column">
+            <h1>Red de Transporte de Chamonix</h1>
+            <p>Para que todos los participantes puedan vivir el evento en las mejores condiciones posibles y a fin de reducir nuestro impacto medio ambiental, incitamos a los corredores, los acompañantes, los voluntarios y los visitantes a informarse sobre
+                el dispositivo de transporte excepcional puesto en marcha durante el UTMB®</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class=one-column>
+            <h1>GALERÍA</h1>
+        </div>
+        <div class="four-column sin_pad">
+            <img src="img/gal1.jpg" alt="seccion 4a">
+        </div>
+        <div class="four-column sin_pad">
+            <img src="img/gal2.jpg" alt="seccion 4b">
+        </div>
+        <div class="four-column sin_pad">
+            <img src="img/gal3.jpg" alt="seccion 4c">
+        </div>
+        <div class="four-column sin_pad">
+            <img src="img/gal4.jpg" alt="seccion 4d">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="one-column">
+            <h1>ALOJAMIENTOS COLABORADORES</h1>
+        </div>
+        <div class="three-column">
+            <img src="img/aloj1.jpg">
+        </div>
+        <div class="three-column">
+            <img src="img/aloj2.png">
+        </div>
+        <div class="three-column">
+            <img src="img/aloj3.png">
+        </div>
+    </div>
+    <div class="one-column">
+        <h1>TOP 5 RESULTADOS 2019</h1>
+    </div>
     <table id="customers">
         <tr>
-            <th>Compañía</th>
-            <th>Corredor</th>
             <th>País</th>
+            <th>Posición</th>
+            <th>Nombre</th>
         </tr>
         <tr>
-            <td>Alfreds Futterkiste</td>
-            <td>Maria Anders</td>
-            <td>Germany</td>
+            <td>Nueva Guinea</td>
+            <td>1</td>
+            <td>Onzima</td>
         </tr>
         <tr>
-            <td>Berglunds snabbköp</td>
-            <td>Christina Berglund</td>
-            <td>Sweden</td>
+            <td>Rusia</td>
+            <td>2</td>
+            <td>Putin</td>
         </tr>
         <tr>
-            <td>Centro comercial Moctezuma</td>
-            <td>Francisco Chang</td>
-            <td>Mexico</td>
+            <td>Perú</td>
+            <td>3</td>
+            <td>Rosales</td>
         </tr>
         <tr>
-            <td>Ernst Handel</td>
-            <td>Roland Mendel</td>
-            <td>Austria</td>
+            <td>Francia</td>
+            <td>4</td>
+            <td>Denisse</td>
         </tr>
         <tr>
-            <td>Island Trading</td>
-            <td>Helen Bennett</td>
-            <td>UK</td>
-        </tr>
-        <tr>
-            <td>Königlich Essen</td>
-            <td>Philip Cramer</td>
-            <td>Germany</td>
-        </tr>
-        <tr>
-            <td>Laughing Bacchus Winecellars</td>
-            <td>Yoshi Tannamuri</td>
-            <td>Canada</td>
-        </tr>
-        <tr>
-            <td>Magazzini Alimentari Riuniti</td>
-            <td>Giovanni Rovelli</td>
-            <td>Italy</td>
-        </tr>
-        <tr>
-            <td>North/South</td>
-            <td>Simon Crowther</td>
-            <td>UK</td>
-        </tr>
-        <tr>
-            <td>Paris spécialités</td>
-            <td>Marie Bertrand</td>
-            <td>France</td>
-        </tr>
+            <td>España</td>
+            <td>5</td>
+            <td>Paco</td>
     </table>
+
+    <div class="row">
+        <div class="one-column">
+            <h1>Contacto y otros</h1>
+        </div>
+        <div class="two-column">
+            <iframe src="https://discord.com/widget?id=783666840902565918&theme=dark" width="100%" height="420px" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+        </div>
+        <div class="two-column">
+            <iframe width="100%" height="420px" src="https://www.youtube.com/embed/AgN2SBBLito" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </div>
+
+
+
+    <div class="row" id="section_5">
+        <div class="one-column">
+            <h1>Más información en la web oficial.</h1>
+        </div>
+        <div class="one-column">
+            <h1>Dele click al icono de UTMB para descargar la infografia</h1>
+            <a href="img/Infografia.pdf" download>
+                <img id="center" src="img/utmb-2016-v1.png" alt="UTMB" width="100%" height="50%">
+            </a>
+        </div>
+
+    </div>
+
+    <div class="row" id="footer">
+        <div class="two-column">
+            <p>UTMB 2020</p>
+        </div>
+
+        <div class="four-column">
+            <p>Facebook</p>
+            <p>Instagram</p>
+        </div>
+
+        <div class="four-column">
+            <p>Official Page</p>
+            <p>Twitter</p>
+        </div>
+    </div>
 </body>
 
 </html>
